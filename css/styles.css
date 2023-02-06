@@ -42,6 +42,8 @@ p {
   --svg-button-color: #afb1b8;
   --svg-secondary-button-color: rgba(255, 255, 255, 0.1);
   --background-gradient-color: rgba(47, 48, 58, 0.4);
+  --portfolio-shadow-color: rgba(0, 0, 0, 0.06);
+  --portfolio-secondary-shadow-color: rgba(0, 0, 0, 0.16);
 }
 
 .container {
@@ -495,7 +497,7 @@ img {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--secondary-main-text-color);
 }
 
 .socials-main .svg-items {
@@ -611,8 +613,9 @@ img {
 
 .main-examples .item:hover,
 .main-examples .item:focus {
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  background: var(--secondary-main-text-color);
+  border: 1px solid var(--examples-outline);
+  box-shadow: 0px 1px 1px var(--team-shadow-main-color),
+    0px 4px 4px var(--portfolio-shadow-color),
+    1px 4px 6px var(--portfolio-secondary-shadow-color);
 }
