@@ -185,6 +185,9 @@ img {
   text-align: center;
   padding-bottom: 200px;
   padding-top: 200px;
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .banner .text {
@@ -406,16 +409,16 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-button-color);
+  margin-bottom: 50px;
 }
 
 .customers .logo-list {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 50px;
 }
 
-.customers .item {
+.customers .link {
   width: 170px;
   height: 92px;
   display: flex;
@@ -430,8 +433,8 @@ img {
   fill: currentColor;
 }
 
-.customers .item:hover,
-.customers .item:focus {
+.customers .link:hover,
+.customers .link:focus {
   color: var(--hover-button-color);
   border: 1px solid var(--hover-button-color);
 }
@@ -485,6 +488,7 @@ img {
 
 .footer-main {
   display: flex;
+  align-items: baseline;
 }
 
 .contacts-main {
@@ -517,7 +521,7 @@ img {
 .socials-main .svg-items .link {
   border-radius: 50%;
   background-color: var(--svg-secondary-button-color);
-  color: var(--svg-button-color);
+  color: var(--secondary-main-text-color);
   display: flex;
   height: 44px;
   width: 44px;
@@ -532,7 +536,6 @@ img {
 .socials-main .svg-items .link:hover,
 .socials-main .svg-items .link:focus {
   background-color: var(--hover-button-color);
-  color: var(--secondary-main-text-color);
 }
 
 /* Portfolio */
@@ -585,6 +588,10 @@ img {
   cursor: pointer;
 }
 
+.main-examples .link {
+  text-decoration: none;
+}
+
 .main-examples .item-text {
   border-bottom: 1px solid var(--examples-outline);
   border-left: 1px solid var(--examples-outline);
@@ -621,6 +628,20 @@ img {
 }
 
 /* HOMEWORK 5 */
+
+/* header */
+
+.navigation .item {
+  position: relative;
+}
+
+.navigation .decoration.current {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #2196f3;
+}
 
 /* boxes */
 
