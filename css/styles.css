@@ -141,6 +141,8 @@ img {
 .footer li a:hover,
 .footer li a:focus {
   color: var(--hover-button-color);
+  transition-duration: var(--main-duration-time);
+  transition-timing-function: var(--main-timing-function);
 }
 
 .addresses .address-item {
@@ -245,6 +247,8 @@ img {
 .banner .button-item:focus {
   background: var(--secondary-hover-button-color);
   text-shadow: none;
+  transition-duration: var(--main-duration-time);
+  transition-timing-function: var(--main-timing-function);
 }
 
 /* Advantages */
@@ -438,6 +442,8 @@ img {
 .main-team .svg-items .link:focus {
   background-color: var(--hover-button-color);
   color: var(--secondary-main-text-color);
+  transition-duration: var(--main-duration-time);
+  transition-timing-function: var(--main-timing-function);
 }
 
 /* Customers */
@@ -477,6 +483,8 @@ img {
 .customers .link:focus {
   color: var(--hover-button-color);
   border: 1px solid var(--hover-button-color);
+  transition-duration: var(--main-duration-time);
+  transition-timing-function: var(--main-timing-function);
 }
 
 /* Footer */
@@ -576,6 +584,8 @@ img {
 .socials-main .svg-items .link:hover,
 .socials-main .svg-items .link:focus {
   background-color: var(--hover-button-color);
+  transition-duration: var(--main-duration-time);
+  transition-timing-function: var(--main-timing-function);
 }
 
 /* Portfolio */
@@ -615,6 +625,8 @@ img {
     0px 1px 2px var(--buttons-shadow-secondary-color),
     0px 2px 2px var(--team-shadow-main-color);
   border-radius: 4px;
+  transition-duration: var(--main-duration-time);
+  transition-timing-function: var(--main-timing-function);
 }
 
 .main-examples {
@@ -664,6 +676,8 @@ img {
   box-shadow: 0px 1px 1px var(--team-shadow-main-color),
     0px 4px 4px var(--portfolio-shadow-color),
     1px 4px 6px var(--portfolio-secondary-shadow-color);
+  transition-duration: var(--main-duration-time);
+  transition-timing-function: var(--main-timing-function);
 }
 
 .main-examples .link {
@@ -693,14 +707,14 @@ img {
   color: var(--secondary-main-text-color);
 }
 
-.main-examples .link:hover .animation-content {
+.main-examples .item:hover .animation-content {
   transform: translateY(0);
   opacity: 1;
   transition-duration: var(--main-duration-time);
   transition-timing-function: var(--main-timing-function);
 }
 
-.main-examples .link:not(:hover) .animation-content {
+.main-examples .item:not(:hover) .animation-content {
   transform: translateY(100%);
   opacity: 0;
   transition-duration: var(--main-duration-time);
@@ -737,8 +751,8 @@ img {
   transition-timing-function: var(--main-timing-function);
 }
 .backdrop.is-hidden {
-  opacity: 0;
   visibility: hidden;
+  opacity: 0;
   pointer-events: none;
 }
 .modal-btn {
@@ -750,6 +764,7 @@ img {
   position: absolute;
   top: 8px;
   right: 8px;
+  cursor: pointer;
   background-color: transparent;
   border-radius: 50%;
   border: 1px solid var(--buttons-shadow-main-color);
